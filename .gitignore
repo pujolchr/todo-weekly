@@ -1,0 +1,10 @@
+# no backup file
+*~
+
+# no instaled modules
+nodes_modules/*
+# no backup file
+*~
+
+# no instaled modules
+node_modules/*

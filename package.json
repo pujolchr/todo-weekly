@@ -1,0 +1,33 @@
+{
+  "name": "todo-weekly",
+  "version": "0.0.0",
+  "description": "A fluid todo list App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pujolchr/todo-weekly.git"
+  },
+  "author": "",
+  "contributors": [
+    "Richard Middleton <richard@richardmiddleton.me> (http://richardmiddleton.me/)",
+    "Christian Pujol <pujolchr@gmail.com> (https://naga.no)"
+  ],
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/pujolchr/todo-weekly/issues"
+  },
+  "homepage": "https://github.com/pujolchr/todo-weekly#readme",
+  "dependencies": {
+    "shortid": "^2.2.8"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
+  }
+}
