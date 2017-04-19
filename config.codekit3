@@ -15,6 +15,32 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/images\/mockup.jpg": {
+		"ft": 16384,
+		"iS": 196852,
+		"oA": 0,
+		"oAP": "\/images\/mockup.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/images\/mockup.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/images\/mockup.psd",
+		"oF": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
