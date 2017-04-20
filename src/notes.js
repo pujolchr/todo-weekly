@@ -31,11 +31,7 @@ function generateUID() {
 }
 
 function removeTask(taskId, day) {
-  const newDay = [];
-  day.forEach((currentValue) => {
-    if (currentValue.UID !== taskId) newDay.push(currentValue);
-  });
-  return newDay;
+  return day.filter(elmt => elmt.UID !== taskId);
 }
 
 function addTask(task, day) {
@@ -43,6 +39,7 @@ function addTask(task, day) {
 }
 
 function createTask(taskText) {
+
   return {
     UID: generateUID(),
     text: taskText,
@@ -52,13 +49,11 @@ function createTask(taskText) {
 function duplicateTask(task) {
   return createTask(task.text);
 }
-
-function populateList(number) {
-  let n = number;
-  if (n === undefined) n = 1;
+// for debug
+function populate() {
   let day = [];
-  for (let i = 0; i < n; i += 1) {
-    day = addTask(createTask(`Task-${i}-${generateUID()}`), day);
+  for (let i = 0; i < 5; i += 1) {
+    day = addTask(createTask(`a-${i}`), day);
   }
   return day;
 }
@@ -68,5 +63,5 @@ export default {
   createTask,
   addTask,
   removeTask,
-  populateList,
+  populate,
 };
