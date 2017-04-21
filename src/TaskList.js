@@ -1,36 +1,30 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class Task extends Component {
-  constructor(props) {
-    super(props);
-    this.state = this.props.task;
-    this.handleDragStart = this.handleDragStart.bind(this);
-  }
+function Task(props) {
 
 
-  handleDragStart(e) {
-    console.log(`start drag ${this.state.UID}`);
+  function handleDragStart(e) {
+    console.log(`start drag ${props.task.UID}`);
     console.log(`start drag ${e}`);
-    e.dataTransfer.setData('text', `${this.props.order}@${this.props.day}`);
+    e.dataTransfer.setData('text', `${props.order}@${props.day}`);
   }
 
-  handleDragEnd() {
-    console.log(`stop drag ${this}`);
+  function handleDragEnd() {
+    console.log(`stop drag ${props.task}`);
   }
-  render() {
     return (
       <div
         className="task bg-yellow"
-        id={`${this.props.order}@${this.props.day}`}
+        id={`${props.order}@${props.day}`}
         draggable="true"
-        onDragStart={this.handleDragStart}
-        onDragEnd={this.handleDragEnd}
+        onDragStart={handleDragStart}
+        onDragEnd={handleDragEnd}
       >
-        {this.props.task.text}
+        {props.task.text}
       </div>
     );
-  }
+  
 }
 
 Task.propTypes = {
@@ -55,7 +49,7 @@ function TaskList(props) {
       }
       }
     >
-      <h2>{props.name}</h2>
+      <span>{props.name}</span>
       {props.list.map((task, idx) => <Task
         day={props.name}
         order={idx}

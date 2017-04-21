@@ -15,6 +15,8 @@ const WEEK_DAYS = [
 ];
 
 function WeekDays(props) {
+  console.log(props.week);
+  console.log(props.week["monday"]);
   return (
     <div>
       Days of the Week

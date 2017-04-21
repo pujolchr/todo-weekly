@@ -39,7 +39,7 @@ function removeTask(taskId, day) {
 }
 
 function addTask(task, day) {
-  return day.concat([task]);
+  return day.concat(task);
 }
 
 function createTask(taskText) {
