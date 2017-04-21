@@ -1,8 +1,8 @@
-import task from './task';
+import task from './taskFunction';
 
 
 const MOCKUP_DATA = {
-  pool: task.populateList(5),
+  pool: task.populateList(1),
   monday: task.populateList(3),
   tuesday: task.populateList(8),
   wednesday: task.populateList(4),
