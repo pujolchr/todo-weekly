@@ -4,6 +4,7 @@ import './App.css';
 import Pool from './Pool';
 import AddTaskBtn from './AddTaskBtn';
 import WeekDays from './WeekDays';
+import NewTaskForm from './NewTaskForm';
 // for debug ans dev
 import MOCKUP_DATA from './mockUpData';
 import { removeTask, addTask, createTask } from './taskFunction';
@@ -24,9 +25,22 @@ class App extends Component {
     this.moveTask = this.moveTask.bind(this);
     this.newTask = this.newTask.bind(this);
   }
+
+  closeAddTaskModal() {
+    const modal = document.getElementById('modal');
+    const modalBg = document.getElementById('modal-bg');
+    modal.style.display = 'none';
+    modalBg.style.display = 'none';
+  }
   newTask() {
     let newPool = this.state.pool;
     const newTask = createTask('new Task');
+
+    const modal = document.getElementById('modal');
+    const modalBg = document.getElementById('modal-bg');
+    modal.style.display = 'block';
+    modalBg.style.display = 'block';
+
     newPool = addTask(newTask, newPool);
     this.setState({
       pool: newPool,
@@ -37,7 +51,6 @@ class App extends Component {
     const task = this.state[list][idx];
     const newOriginList = removeTask(task.UID, this.state[list]);
     const newDest = addTask(task, this.state[dest]);
-
     this.setState({
       [list]: newOriginList,
       [dest]: newDest,
@@ -52,6 +65,7 @@ class App extends Component {
           <Pool onDrop={this.moveTask} list={this.state.pool} />
           <WeekDays onDrop={this.moveTask} week={this.state} />
         </div>
+        <NewTaskForm onClick={this.closeAddTaskModal} />
       </div>
     );
   }
