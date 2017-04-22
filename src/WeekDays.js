@@ -15,8 +15,6 @@ const WEEK_DAYS = [
 ];
 
 function WeekDays(props) {
-  console.log(props.week);
-  console.log(props.week["monday"]);
   return (
     <div>
       Days of the Week
@@ -31,6 +29,7 @@ function WeekDays(props) {
     </div>
   );
 }
+
 WeekDays.propTypes = {
   week: PropTypes.shape({
     monday: PropTypes.arrayOf(PropTypes.object).isRequired,

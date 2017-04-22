@@ -6,17 +6,6 @@ const shortid = require('shortid');
  *    pujolchr@gmail.com
  */
 
-/*
- * abstract
- *
- * we got seven set of Tasks, one for each day of the week.
- * We got a extra set of Tasks for the unorganized Tasks
- * We can move Tasks from one set to the other.
- *  ie remove a task from one set
- *     and add the same task in another
- * we can create new Task
- *
- */
 
 /* prototype tasks
 const prototypeTask = {
@@ -63,7 +52,7 @@ function populateList(number) {
   return day;
 }
 
-export default {
+export {
   duplicateTask,
   createTask,
   addTask,

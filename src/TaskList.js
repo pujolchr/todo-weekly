@@ -10,11 +10,8 @@ function TaskList(props) {
       onDragOver={e => e.preventDefault()}
       onDrop={(e) => {
         e.preventDefault();
-        console.log(`dopped on ${props.name}`);
         props.onDrop(e.dataTransfer.getData('text'), props.name);
-        console.log(`dopped on ${props.name}`);
-      }
-      }
+      }}
     >
       <span>{props.name}</span>
       {props.list.map((task, idx) => <Task
