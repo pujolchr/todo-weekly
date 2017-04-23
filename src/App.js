@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Pool from './Pool';
-import AddTaskBtn from './AddTaskBtn';
 import WeekDays from './WeekDays';
 import NewTaskForm from './NewTaskForm';
 // for debug ans dev
@@ -13,13 +12,13 @@ class App extends Component {
     super(props);
     this.state = {
       pool: MOCKUP_DATA.pool,
-      Monday: MOCKUP_DATA.monday,
-      Tuesday: MOCKUP_DATA.tuesday,
-      Wednesday: MOCKUP_DATA.wednesday,
-      Thursday: MOCKUP_DATA.thursday,
-      Friday: MOCKUP_DATA.friday,
-      Saturday: MOCKUP_DATA.saturday,
-      Sunday: MOCKUP_DATA.sunday,
+      monday: MOCKUP_DATA.monday,
+      tuesday: MOCKUP_DATA.tuesday,
+      wednesday: MOCKUP_DATA.wednesday,
+      thursday: MOCKUP_DATA.thursday,
+      friday: MOCKUP_DATA.friday,
+      saturday: MOCKUP_DATA.saturday,
+      sunday: MOCKUP_DATA.sunday,
     };
     this.moveTask = this.moveTask.bind(this);
     this.newTask = this.newTask.bind(this);
@@ -59,9 +58,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <AddTaskBtn onClick={this.newTask} />
         <div className="flex App">
-          <Pool onDrop={this.moveTask} list={this.state.pool} />
+          <Pool onClick={this.newTask} onDrop={this.moveTask} list={this.state.pool} />
           <WeekDays onDrop={this.moveTask} week={this.state} />
         </div>
         <NewTaskForm onClick={this.closeAddTaskModal} />

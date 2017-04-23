@@ -14,7 +14,6 @@ function TaskList(props) {
         props.onDrop(e.dataTransfer.getData('text'), props.name);
       }}
     >
-      <h3 className="days-heading">{props.name}</h3>
       {props.list.map((task, idx) => <Task
         day={props.name}
         order={idx}
