@@ -112,24 +112,6 @@ header a {
 .built a:hover {
   text-decoration: underline; }
 
-.shadow {
-  box-shadow: 0 4px 8px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3); }
-
-.thin {
-  font-weight: 300; }
-
-.center {
-  text-align: center; }
-
-.muted {
-  color: #515151; }
-
-.hidden {
-  display: none; }
-
-.visible {
-  display: block; }
-
 .bg-yellow {
   background-color: #f9ea4f; }
 
@@ -206,7 +188,7 @@ header {
         align-self: center; }
 
 main {
-  padding: 42px 20px; }
+  padding: 52px 20px; }
 
 .flex {
   display: -webkit-box;
