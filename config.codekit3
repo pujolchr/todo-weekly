@@ -233,13 +233,11 @@
 		},
 	"\/src\/index-min.js": {
 		"ft": 64,
-
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/src\/index-min-min.js",
 		"oF": 0,
 		"sC": 3,
-
 		"tS": 0
 		},
 	"\/src\/index.js": {
