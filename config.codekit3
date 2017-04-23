@@ -143,19 +143,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/_typography.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/scss\/_typography.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/scss\/_utilities.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -191,16 +178,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/src\/App.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/src\/App-min.css",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/src\/App.js": {
 		"ft": 64,
 		"mi": 1,
@@ -209,6 +186,19 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/src\/App.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/App.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/src\/App.test.js": {
 		"ft": 64,
@@ -219,25 +209,27 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/src\/flex.css": {
-		"aP": 1,
+	"\/src\/colors.scss": {
+		"aP": 0,
 		"bl": 0,
-		"ft": 16,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"oA": 0,
-		"oAP": "\/src\/flex-min.css",
+		"oA": 1,
+		"oAP": "\/src\/colors.css",
 		"oF": 0,
-		"oS": 0
+		"oS": 0,
+		"uL": 1
 		},
-	"\/src\/index.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"\/src\/index-min.js": {
+		"ft": 64,
+		"mi": 1,
 		"oA": 0,
-		"oAP": "\/src\/index-min.css",
+		"oAP": "\/src\/index-min-min.js",
 		"oF": 0,
-		"oS": 0
+		"sC": 1,
+		"tS": 0
 		},
 	"\/src\/index.js": {
 		"ft": 64,
@@ -267,6 +259,28 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/src\/NewTaskForm.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/src\/NewTaskForm-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/src\/normalise.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/normalise.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/src\/Pool.js": {
 		"ft": 64,
 		"mi": 1,
@@ -275,6 +289,19 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/src\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/src\/Task.js": {
 		"ft": 64,
@@ -302,6 +329,19 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/src\/typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/src\/WeekDays.js": {
 		"ft": 64,
