@@ -6,6 +6,7 @@ import Task from './Task';
 function TaskList(props) {
   return (
     <div
+      className={props.width}
       id={props.name}
       onDragOver={e => e.preventDefault()}
       onDrop={(e) => {
@@ -13,7 +14,7 @@ function TaskList(props) {
         props.onDrop(e.dataTransfer.getData('text'), props.name);
       }}
     >
-      <span>{props.name}</span>
+      <h3 className="days-heading">{props.name}</h3>
       {props.list.map((task, idx) => <Task
         day={props.name}
         order={idx}
@@ -25,6 +26,7 @@ function TaskList(props) {
 }
 
 TaskList.propTypes = {
+  width: PropTypes.string.isRequired,
   onDrop: PropTypes.func.isRequired,
   name: PropTypes.string,
   list: PropTypes.arrayOf(PropTypes.object),

@@ -1,0 +1,46 @@
+@import "normalise";
+@import "colors";
+@import "typography";
+@import "App";
+
+body {background-color: $background}
+
+header {
+	width:     100%;
+	height:    42px;
+  top:          0;
+  position: fixed;
+  z-index:    100;
+	background-color:   $nav;
+	display:            flex;
+	justify-content:  center;
+	border-bottom:   1px solid #ccc;
+	box-shadow: 0 3px 3px -4px #999;
+  
+  .logo {align-self: center}
+}
+
+main {
+    padding: 52px 20px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.pool-col {
+    min-width: 250px;
+}
+
+#board {
+    min-width: 400px;
+    flex: 2;
+}
+
+.days-col {
+    min-width: 200px;
+    text-align: center;
+    flex: 1;
+}
