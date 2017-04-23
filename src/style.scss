@@ -1,6 +1,7 @@
 @import "normalise";
 @import "colors";
 @import "typography";
+@import "utilities";
 @import "App";
 
 body {background-color: $background}
@@ -8,9 +9,9 @@ body {background-color: $background}
 header {
 	width:     100%;
 	height:    42px;
-  top:          0;
-  position: fixed;
-  z-index:    100;
+    top:          0;
+    position: fixed;
+    z-index:    100;
 	background-color:   $nav;
 	display:            flex;
 	justify-content:  center;
@@ -21,7 +22,7 @@ header {
 }
 
 main {
-    padding: 52px 20px;
+    padding: 42px 20px;
 }
 
 .flex {
