@@ -1,8 +1,7 @@
 const shortid = require('shortid');
 /*
- * A simple js file with the basic functionality of the app
+ * the basic functionality of the app
  * author
- *    richard@richardmiddleton.me
  *    pujolchr@gmail.com
  */
 
@@ -20,11 +19,7 @@ function generateUID() {
 }
 
 function removeTask(taskId, day) {
-  const newDay = [];
-  day.forEach((currentValue) => {
-    if (currentValue.UID !== taskId) newDay.push(currentValue);
-  });
-  return newDay;
+  return day.filter(task => task.UID !== taskId);
 }
 
 function addTask(task, day) {
