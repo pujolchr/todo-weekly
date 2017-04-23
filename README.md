@@ -1,2 +1,3 @@
 # todo-weekly
-A fluid todo list App
+
+A fluid todo list App.
