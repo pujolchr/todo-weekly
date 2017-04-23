@@ -5,7 +5,7 @@ import TaskList from './TaskList';
 
 function Pool(props) {
   return <TaskList 
-    width="pool-width"
+    width="pool-col"
     onDrop={props.onDrop} name="pool" list={props.list} />;
 }
 

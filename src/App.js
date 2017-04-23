@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import './App.css';
 import Pool from './Pool';
 import AddTaskBtn from './AddTaskBtn';
 import WeekDays from './WeekDays';

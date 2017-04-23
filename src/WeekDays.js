@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import TaskList from './TaskList';
-import './flex.css';
 
 const WEEK_DAYS = [
   'monday',
@@ -16,8 +15,7 @@ const WEEK_DAYS = [
 
 function WeekDays(props) {
   return (
-    <div>
-      Days of the Week
+    <div id="board">
     <div className="flex bg-grey">
       {WEEK_DAYS.map(day => <TaskList
         width="days-col"

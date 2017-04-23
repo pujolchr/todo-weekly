@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Task from './Task';
-import './TaskList.css'
 
 function TaskList(props) {
   return (
@@ -15,7 +14,7 @@ function TaskList(props) {
         props.onDrop(e.dataTransfer.getData('text'), props.name);
       }}
     >
-      <span>{props.name}</span>
+      <h3 className="days-heading">{props.name}</h3>
       {props.list.map((task, idx) => <Task
         day={props.name}
         order={idx}

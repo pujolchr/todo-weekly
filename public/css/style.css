@@ -1,11 +1,3 @@
-/*
-Name: Todo Weekly
-URL: 
-Author: 
-Author URL: 
-Description: A fluid todo list App
-Version: 1.0
-*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -63,11 +55,12 @@ h1 span {
   font-weight: 700; }
 
 h2 {
-  font-size: 6em;
-  color: #fbfbfb; }
+  font-size: 2.6em;
+  color: #262626; }
 
 h3 {
-  font-size: 2.3em; }
+  font-size: 1.5em;
+  margin-bottom: 30px; }
 
 p {
   color: #262626; }
@@ -119,25 +112,106 @@ header a {
 .built a:hover {
   text-decoration: underline; }
 
-.shadow {
-  box-shadow: 0 4px 8px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3); }
+.bg-yellow {
+  background-color: #f9ea4f; }
 
-.thin {
-  font-weight: 300; }
+.task {
+  height: 62px;
+  width: 188px;
+  margin: 8px 0;
+  padding: 8px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  box-shadow: 3px 4px 5px 0px #999;
+  text-align: left; }
+  .task:hover {
+    box-shadow: 3px 4px 5px 1px #999; }
 
-.center {
-  text-align: center; }
+[draggable] {
+  cursor: move; }
 
-.muted {
-  color: #515151; }
-
-.hidden {
+.modal {
+  position: fixed;
+  z-index: 100;
   display: none; }
 
-.visible {
-  display: block; }
+.modal.closed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
-/*=============================================
-=                 MEDIA QUERIES               =
-=============================================*/
-/* -- BREAK 1 -- */
+.modal-bg {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: black;
+  opacity: 0.85;
+  z-index: 101; }
+
+.close-button {
+  position: inherit;
+  top: 16px;
+  right: 20px;
+  z-index: 102; }
+
+.modal-main {
+  background-color: white;
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 102; }
+
+body {
+  background-color: #f2f2f2; }
+
+header {
+  width: 100%;
+  height: 42px;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 3px 3px -4px #999; }
+  header .logo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+
+main {
+  padding: 52px 20px; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.pool-col {
+  min-width: 250px; }
+
+#board {
+  min-width: 400px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2; }
+
+.days-col {
+  min-width: 200px;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }

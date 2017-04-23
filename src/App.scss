@@ -1,32 +1,28 @@
-.flex {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.bg-grey {
-    background-color: grey;
-}
+
 .bg-yellow {
-    background-color: yellow;
+    background-color: $yellow;
 }
+
 .task {
-    margin:5px;
-    padding:10px;
-    min-height: 30px;
-    
-}
+    height: 62px;
+    width: 188px;
+    margin: 8px 0;
+    padding: 8px;
+    transition: all 0.4s ease;
+	  box-shadow: 3px 4px 5px 0px #999;
+    &:hover {box-shadow: 3px 4px 5px 1px #999}
+    text-align: left;
+  }
+
 [draggable] {
     cursor: move;
-}
-div.placeholder {background: rgb(255,240,120);}
-div.placeholder:before {
-  content: "Drop here";
-  color: rgb(225,210,90);
 }
 
 .modal {
   position: fixed;
   z-index: 100;
-  display: none; }
+  display: none;
+}
 
 .modal.closed {
   display: -webkit-box;
@@ -49,7 +45,7 @@ div.placeholder:before {
   z-index: 102; }
 
 .modal-main {
-  background-color: yellow;
+  background-color: white;
   position: inherit;
   top: 50%;
   left: 50%;
