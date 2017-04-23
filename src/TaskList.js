@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Task from './Task';
+import './TaskList.css'
 
 function TaskList(props) {
   return (
     <div
+      className={props.width}
       id={props.name}
       onDragOver={e => e.preventDefault()}
       onDrop={(e) => {
@@ -25,6 +27,7 @@ function TaskList(props) {
 }
 
 TaskList.propTypes = {
+  width: PropTypes.string.isRequired,
   onDrop: PropTypes.func.isRequired,
   name: PropTypes.string,
   list: PropTypes.arrayOf(PropTypes.object),

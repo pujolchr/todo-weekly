@@ -20,6 +20,7 @@ function WeekDays(props) {
       Days of the Week
     <div className="flex bg-grey">
       {WEEK_DAYS.map(day => <TaskList
+        width="days-col"
         onDrop={props.onDrop}
         key={`task-list-${day}`}
         name={day}
