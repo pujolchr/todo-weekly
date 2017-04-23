@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import TaskList from './TaskList';
 
 const WEEK_DAYS = [
-  'monday',
-  'tuesday',
-  'wednesday',
-  'thursday',
-  'friday',
-  'saturday',
-  'sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
 ];
 
 function WeekDays(props) {
