@@ -13,13 +13,13 @@ class App extends Component {
     super(props);
     this.state = {
       pool: MOCKUP_DATA.pool,
-      monday: MOCKUP_DATA.monday,
-      tuesday: MOCKUP_DATA.tuesday,
-      wednesday: MOCKUP_DATA.wednesday,
-      thursday: MOCKUP_DATA.thursday,
-      friday: MOCKUP_DATA.friday,
-      saturday: MOCKUP_DATA.saturday,
-      sunday: MOCKUP_DATA.sunday,
+      Monday: MOCKUP_DATA.monday,
+      Tuesday: MOCKUP_DATA.tuesday,
+      Wednesday: MOCKUP_DATA.wednesday,
+      Thursday: MOCKUP_DATA.thursday,
+      Friday: MOCKUP_DATA.friday,
+      Saturday: MOCKUP_DATA.saturday,
+      Sunday: MOCKUP_DATA.sunday,
     };
     this.moveTask = this.moveTask.bind(this);
     this.newTask = this.newTask.bind(this);
