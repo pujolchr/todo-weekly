@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-function TaskCtrl(props) {
+function TaskCtrl() {
   return (<div>Task Ctrl</div>);
 }
 function Task(props) {
@@ -21,7 +21,9 @@ function Task(props) {
       onDragEnd={handleDragEnd}
     >
       <TaskCtrl id={`ctrl@${props.order}@${props.day}`} />
-      {props.task.text}
+      <p contentEditable>
+        {props.task.text}
+      </p>
     </div>
   );
 }
