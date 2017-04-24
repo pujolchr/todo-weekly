@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import TaskList from './TaskList';
-import TaskListHeader from './TaskListHeader'
+import TaskListHeader from './TaskListHeader';
 
 const WEEK_DAYS = [
   'monday',
@@ -19,8 +19,8 @@ function WeekDays(props) {
     <div id="board">
       <div className="flex bg-grey">
         {WEEK_DAYS.map(day => (
-          <div>
-            <TaskListHeader name={day} />
+          <div key={`list-wrapper-${day}`} >
+            <TaskListHeader key={`list-header-${day}`} name={day} />
             <TaskList
               width="days-col"
               onDrop={props.onDrop}
