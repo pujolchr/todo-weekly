@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Task from './Task';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  const text = 'text of note';
+  ReactDOM.render(
+    <Task text={text} day="monday" task={{}} order={1} />,
+    div);
 });
-
-
