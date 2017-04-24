@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TaskList from './TaskList';
+import WeekDays from '../WeekDays';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<TaskList />, div);
+  const week = {};
+  ReactDOM.render(<WeekDays week={week} />, div);
 });

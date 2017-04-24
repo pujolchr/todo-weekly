@@ -5,7 +5,7 @@ import {
   removeTask,
   createTask,
   addTask,
-} from './taskFunction';
+} from '../taskFunction';
 
 /* eslint no-undef: 0 */  // --> OFF
 

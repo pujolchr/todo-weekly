@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import WeekDays from './WeekDays';
+import App from '../App';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  const week = {};
-  ReactDOM.render(<WeekDays week={week} />, div);
+  ReactDOM.render(<App />, div);
 });
