@@ -4,21 +4,18 @@ import PropTypes from 'prop-types';
 
 function Task(props) {
   return (
-    <div
+    <textarea
       className="task bg-yellow"
       id={`${props.order}@${props.day}`}
       draggable="true"
       onDragStart={(e) => {
         e.dataTransfer.setData('text', `${props.order}@${props.day}`);
       }}
-    >
-      <textarea
-        defaultValue={props.task.text}
-        onChange={(e) => {
-          props.onChange(e.target.value, props.order, props.day);
-        }}
-      />
-    </div>
+      defaultValue={props.task.text}
+      onChange={(e) => {
+        props.onChange(e.target.value, props.order, props.day);
+      }}
+    />
   );
 }
 

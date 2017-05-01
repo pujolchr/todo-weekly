@@ -15,6 +15,7 @@ function TaskList(props) {
       }}
     >
       {props.list.map((task, idx) => <Task
+        onChange={props.onChange}
         day={props.name}
         order={idx}
         key={task.UID}
