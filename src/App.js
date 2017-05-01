@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import Pool from './Pool';
 import WeekDays from './WeekDays';
-import NewTaskForm from './NewTaskForm';
 // for debug ans dev
 import MOCKUP_DATA from './mockUpData';
 import { removeTask, addTask, createTask } from './taskFunction';
@@ -22,26 +21,23 @@ class App extends Component {
     };
     this.moveTask = this.moveTask.bind(this);
     this.newTask = this.newTask.bind(this);
-  }
-
-  closeAddTaskModal() {
-    const modal = document.getElementById('modal');
-    const modalBg = document.getElementById('modal-bg');
-    modal.style.display = 'none';
-    modalBg.style.display = 'none';
+    this.editTask = this.editTask.bind(this);
   }
   newTask() {
     let newPool = this.state.pool;
-    const newTask = createTask('new Task');
-
-    const modal = document.getElementById('modal');
-    const modalBg = document.getElementById('modal-bg');
-    modal.style.display = 'block';
-    modalBg.style.display = 'block';
-
+    const newTask = createTask('');
     newPool = addTask(newTask, newPool);
     this.setState({
       pool: newPool,
+    });
+  }
+
+  editTask(text, idx, day) {
+    const newList = [...this.state[day]];
+    const task = newList[idx];
+    task.text = text;
+    this.setState({
+      [day]: newList,
     });
   }
   moveTask(origin, dest) {
@@ -54,15 +50,20 @@ class App extends Component {
       [dest]: newDest,
     });
   }
-
   render() {
     return (
-      <div>
-        <div className="flex App">
-          <Pool onClick={this.newTask} onDrop={this.moveTask} list={this.state.pool} />
-          <WeekDays onDrop={this.moveTask} week={this.state} />
-        </div>
-        <NewTaskForm onClick={this.closeAddTaskModal} />
+      <div className="flex App">
+        <Pool
+          onChange={this.editTask}
+          onClick={this.newTask}
+          onDrop={this.moveTask}
+          list={this.state.pool}
+        />
+        <WeekDays
+          onChange={this.editTask}
+          onDrop={this.moveTask}
+          week={this.state}
+        />
       </div>
     );
   }

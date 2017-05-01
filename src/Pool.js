@@ -11,6 +11,7 @@ function Pool(props) {
         <AddTaskBtn onClick={props.onClick} />
       </div>
       <TaskList
+        onChange={props.onChange}
         width="pool-col"
         onDrop={props.onDrop} name="pool" list={props.list}
       />
@@ -19,6 +20,7 @@ function Pool(props) {
 }
 
 Pool.propTypes = {
+  onChange: PropTypes.func.isRequired,
   onClick: PropTypes.func.isRequired,
   onDrop: PropTypes.func.isRequired,
   list: PropTypes.arrayOf(PropTypes.object).isRequired,

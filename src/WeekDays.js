@@ -22,6 +22,7 @@ function WeekDays(props) {
           <div key={`list-wrapper-${day}`} >
             <TaskListHeader key={`list-header-${day}`} name={day} />
             <TaskList
+              onChange={props.onChange}
               width="days-col"
               onDrop={props.onDrop}
               key={`task-list-${day}`}
