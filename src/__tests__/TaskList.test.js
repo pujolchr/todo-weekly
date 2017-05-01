@@ -4,5 +4,8 @@ import TaskList from '../TaskList';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<TaskList />, div);
+  ReactDOM.render(<TaskList
+    width={'0'}
+    onDrop={() => {}}
+  />, div);
 });

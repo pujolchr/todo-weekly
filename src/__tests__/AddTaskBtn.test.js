@@ -4,5 +4,5 @@ import AddTaskBtn from '../AddTaskBtn';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<AddTaskBtn />, div);
+  ReactDOM.render(<AddTaskBtn onClick={() => console.log('test')} />, div);
 });

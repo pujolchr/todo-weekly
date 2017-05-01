@@ -4,6 +4,18 @@ import WeekDays from '../WeekDays';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  const week = {};
-  ReactDOM.render(<WeekDays week={week} />, div);
+  const week = {
+    monday: [],
+    tuesday: [],
+    wednesday: [],
+    thursday: [],
+    friday: [],
+    saturday: [],
+    sunday: [],
+
+  };
+  ReactDOM.render(<WeekDays
+    onDrop={() => {}}
+    week={week}
+  />, div);
 });
